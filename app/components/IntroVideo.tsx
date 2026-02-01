@@ -34,6 +34,7 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
         playsInline
         onEnded={onComplete}
         src="/video.mov"
+        preload="auto"
       />
 
       <AnimatePresence>
