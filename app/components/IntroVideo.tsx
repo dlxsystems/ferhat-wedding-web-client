@@ -17,8 +17,6 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
     if (hasStarted) return;
     setHasStarted(true);
     if (videoRef.current) {
-      videoRef.current.muted = false;
-      videoRef.current.currentTime = 0;
       videoRef.current.play().catch(console.error);
     }
     startPlaying();
@@ -34,10 +32,9 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
         ref={videoRef}
         className="w-full h-full md:object-cover object-fill"
         playsInline
-        muted
-        loop
         onEnded={onComplete}
         src="/video.mov"
+        poster="/intro-poster.png"
         preload="auto"
       />
 
@@ -50,11 +47,9 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
             exit={{ opacity: 0 }}
           >
             {/* 
-              We use a transparent overlay so the video is fully visible.
-              The container still captures the click to start the full experience.
-              Adding a very subtle shimmer to indicate life.
+              No visible button as requested. 
+              The cursor-pointer on the parent indicates it's clickable.
             */}
-            <motion.div className="absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-black/20 pointer-events-none" />
           </motion.div>
         )}
       </AnimatePresence>
