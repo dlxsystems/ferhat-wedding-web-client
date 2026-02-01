@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fcfbf9; /* Ultra light cream */
+  --foreground: #4a4a4a; /* Soft charcoal */
+
+  --primary: #b08d55; /* Metallic Bronze */
+  --primary-light: #d8c29d;
+  --secondary: #f4e9e5; /* Blush Pink */
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-script: "Pinyon Script", cursive;
+  --font-sans: "Inter", sans-serif;
+}
+
+@theme {
+  --font-serif: var(--font-serif);
+  --font-script: var(--font-script);
+  --font-sans: var(--font-sans);
+
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* Custom Utilities for Gold Text */
+.text-gold-gradient {
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-border {
+  border-image: linear-gradient(to right, #bf953f, #fcf6ba, #aa771c) 1;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
