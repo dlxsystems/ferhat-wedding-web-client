@@ -21,16 +21,11 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Initialize audio on mount
-    audioRef.current = new Audio("/music.mp3");
-    audioRef.current.loop = true;
-
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current = null;
-      }
-    };
+    if (audioRef.current) {
+      audioRef.current.volume = 0.75;
+      audioRef.current.loop = true;
+      audioRef.current.load();
+    }
   }, []);
 
   const togglePlay = () => {
@@ -39,23 +34,44 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
       audioRef.current.pause();
       setIsPlaying(false);
     } else {
-      audioRef.current.play().catch(console.error);
-      setIsPlaying(true);
+      audioRef.current
+        .play()
+        .then(() => {
+          setIsPlaying(true);
+        })
+        .catch(console.error);
     }
   };
 
   const startPlaying = () => {
     if (!audioRef.current) return;
-    audioRef.current
-      .play()
-      .then(() => {
-        setIsPlaying(true);
-      })
-      .catch(console.error);
+    console.log("MusicProvider: Attempting to start playback");
+
+    // Using a micro-delay can sometimes help Safari coordinate multiple media elements
+    setTimeout(() => {
+      if (audioRef.current) {
+        audioRef.current
+          .play()
+          .then(() => {
+            console.log("MusicProvider: Playback started successfully");
+            setIsPlaying(true);
+          })
+          .catch((err) => {
+            console.error("MusicProvider: Playback failed:", err);
+          });
+      }
+    }, 100);
   };
 
   return (
     <MusicContext.Provider value={{ isPlaying, togglePlay, startPlaying }}>
+      <audio
+        ref={audioRef}
+        src="/music.mp3"
+        loop
+        preload="auto"
+        className="hidden"
+      />
       {children}
     </MusicContext.Provider>
   );

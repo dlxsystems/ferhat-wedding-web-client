@@ -16,10 +16,19 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
   const handleStart = () => {
     if (hasStarted) return;
     setHasStarted(true);
+
+    // Call startPlaying first to ensure background audio gets priority in the user gesture
+    startPlaying();
+
     if (videoRef.current) {
       videoRef.current.play().catch(console.error);
     }
+  };
+
+  const handleEnded = () => {
+    // Ensure music is playing or resumes after video is done
     startPlaying();
+    onComplete();
   };
 
   return (
@@ -32,7 +41,7 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
         ref={videoRef}
         className="w-full h-full md:object-cover object-fill"
         playsInline
-        onEnded={onComplete}
+        onEnded={handleEnded}
         src="/video.mov"
         poster="/intro-poster.png"
         preload="auto"
