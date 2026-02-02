@@ -11,7 +11,7 @@ import React, {
 interface MusicContextType {
   isPlaying: boolean;
   togglePlay: () => void;
-  startPlaying: () => void;
+  startPlaying: (volume?: number) => void;
 }
 
 const MusicContext = createContext<MusicContextType | undefined>(undefined);
@@ -43,16 +43,18 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  const startPlaying = () => {
+  const startPlaying = (volume: number = 0.8) => {
     if (!audioRef.current) return;
-    if (isPlaying) return; // Already playing
 
-    console.log("MusicProvider: Attempting to start playback");
+    // Set the requested volume and reset to start to prevent gaps
+    audioRef.current.volume = volume;
+    audioRef.current.currentTime = 0;
 
+    // We always call play() to ensure the audio resumes if the browser
+    // paused it during the video playback.
     audioRef.current
       .play()
       .then(() => {
-        console.log("MusicProvider: Playback started successfully");
         setIsPlaying(true);
       })
       .catch((err) => {

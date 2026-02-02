@@ -19,8 +19,8 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
     if (hasStarted) return;
     setHasStarted(true);
 
-    // Call startPlaying first to ensure background audio gets priority in the user gesture
-    startPlaying();
+    // Start background music immediately at 0.8 volume
+    startPlaying(0.8);
 
     if (videoRef.current) {
       videoRef.current.play().catch(console.error);
@@ -28,8 +28,6 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
   };
 
   const handleEnded = () => {
-    // Ensure music is playing or resumes after video is done
-    startPlaying();
     onComplete();
   };
 
@@ -41,7 +39,7 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
     >
       <video
         ref={videoRef}
-        className="w-full h-full md:object-cover object-fill object"
+        className="w-full h-full md:object-cover object-fill"
         playsInline
         onEnded={handleEnded}
         src="/video.mp4"
@@ -51,7 +49,7 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
 
       <AnimatePresence>
         {!hasStarted && (
-          <div className="absolute top-10 inset-0 flex flex-col items-center justify-top gap-6">
+          <div className="absolute inset-0 flex flex-col items-center justify-start pt-20 gap-6">
             <div className="animate-bounce text-primary drop-shadow-md text-sm md:text-base tracking-[0.6em] uppercase font-serif font-light">
               {t.hero.open}
             </div>
