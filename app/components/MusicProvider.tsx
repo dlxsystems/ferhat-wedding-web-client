@@ -46,16 +46,21 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
   const startPlaying = (volume: number = 0.8) => {
     if (!audioRef.current) return;
 
-    // Set the requested volume and reset to start to prevent gaps
-    audioRef.current.volume = volume;
-    audioRef.current.currentTime = 0;
+    const audio = audioRef.current;
+    audio.volume = volume;
 
-    // We always call play() to ensure the audio resumes if the browser
-    // paused it during the video playback.
-    audioRef.current
+    // We call play() first. iOS is more likely to accept play()
+    // within a user gesture if we don't seek immediately before.
+    audio
       .play()
       .then(() => {
         setIsPlaying(true);
+        // Once playback is confirmed, we reset to absolute 0
+        try {
+          audio.currentTime = 0;
+        } catch (e) {
+          console.warn("Initial seek failed:", e);
+        }
       })
       .catch((err) => {
         console.error("MusicProvider: Playback failed:", err);

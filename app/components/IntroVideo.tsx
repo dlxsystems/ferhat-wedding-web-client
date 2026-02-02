@@ -23,6 +23,9 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
     startPlaying(0.8);
 
     if (videoRef.current) {
+      // Mute the video to ensure the background music (music.mp3) can start
+      // without being blocked by iOS "one audio at a time" policy.
+      videoRef.current.muted = true;
       videoRef.current.play().catch(console.error);
     }
   };
@@ -41,6 +44,7 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
         ref={videoRef}
         className="w-full h-full md:object-cover object-fill"
         playsInline
+        muted
         onEnded={handleEnded}
         src="/video.mp4"
         poster="/intro-poster.png"
