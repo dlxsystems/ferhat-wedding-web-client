@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMusic } from "./MusicProvider";
+import { useLanguage } from "./LanguageProvider";
 
 interface IntroVideoProps {
   onComplete: () => void;
@@ -12,6 +13,7 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
   const [hasStarted, setHasStarted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const { startPlaying } = useMusic();
+  const { t } = useLanguage();
 
   const handleStart = () => {
     if (hasStarted) return;
@@ -39,27 +41,21 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
     >
       <video
         ref={videoRef}
-        className="w-full h-full md:object-cover object-fill"
+        className="w-full h-full md:object-cover object-fill object"
         playsInline
         onEnded={handleEnded}
-        src="/video.mov"
+        src="/video.mp4"
         poster="/intro-poster.png"
         preload="auto"
       />
 
       <AnimatePresence>
         {!hasStarted && (
-          <motion.div
-            className="absolute inset-0 bg-black/50 flex items-center justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            {/* 
-              No visible button as requested. 
-              The cursor-pointer on the parent indicates it's clickable.
-            */}
-          </motion.div>
+          <div className="absolute top-10 inset-0 flex flex-col items-center justify-top gap-6">
+            <div className="animate-bounce text-primary drop-shadow-md text-sm md:text-base tracking-[0.6em] uppercase font-serif font-light">
+              {t.hero.open}
+            </div>
+          </div>
         )}
       </AnimatePresence>
     </motion.div>

@@ -6,6 +6,7 @@ export const translations = {
       date: "June 6, 2026",
       time: "5:00 PM",
       location: "Wedding Venue",
+      open: "Open Invitation",
     },
     countdown: {
       days: "Days",
@@ -16,14 +17,14 @@ export const translations = {
     couple: {
       title: "The Happy Couple",
       bride: {
-        name: "Sahar Zengin",
+        name: "Sahar Ahmadi",
         role: "The Bride",
-        bio: "She brings the sparkle and the organizational skills. Can't wait to dance the night away!",
+        bio: "She is the heart of everything. Loving, caring, and always attentive to the people around her. With her warm smile and deep sense of family, she brings comfort and joy. She is the sun that brings everything to life — flowers, moments, and above all, the people she holds close.",
       },
       groom: {
         name: "Ferhat Zengin",
         role: "The Groom",
-        bio: "He's ready to suit up and celebrate the best day ever with the love of his life.",
+        bio: "He is calm and strength combined. Reliable, protective, and always there for the ones he loves. With his grounded gaze and generous heart, he knows exactly when to listen and when to laugh. A man who stands by his love — today, tomorrow, and every day.",
       },
     },
     video: {
@@ -41,12 +42,12 @@ export const translations = {
     },
     location: {
       title: "Location",
-      venue: "Grand Ballroom",
+      venue: " The Crown",
       venueSubtitle: "The Venue",
       description:
-        "Join us at the historic Grand Ballroom for a night of elegance and celebration. Nestled in the heart of Amsterdam, this venue features breathtaking chandeliers and a timeless atmosphere.",
+        "The Crown in Rotterdam is a beautiful wedding venue filled with a stylish and inviting warmth. Its bright and spacious hall radiates elegance and tranquility, creating the perfect setting to celebrate our most special day. With its heartfelt atmosphere and central location, it’s the ideal place to share unforgettable moments and make lasting memories with those we love.",
       addressLabel: "Address",
-      address: "123 Wedding Lane, Love City",
+      address: "Schuttevaerweg 57, 3044 BA Rotterdam",
       parkingLabel: "Parking",
       parkingInfo: "Free parking available on site.",
       mapButton: "View on Map",
@@ -56,15 +57,15 @@ export const translations = {
       items: [
         {
           q: "Are children allowed?",
-          a: "We love your nieces and nephews! But if possible, we would appreciate if the kids could stay home for the day - with a snack, a movie, and maybe a babysitter who gives extra hugs.",
+          a: "All of our nieces and nephews are absolutely adorable, and we love them dearly. That said, if possible, we kindly ask that children stay at home on this day — cozy with a snack, a fun movie, and maybe a babysitter handing out extra cuddles.",
         },
         {
           q: "Is there enough parking?",
-          a: "Yes! There are plenty of parking spaces available.",
+          a: "Yes, there is plenty of parking available.",
         },
         {
           q: "Is there a dress code?",
-          a: "There is no strict dress code. However, we would love it if you dressed up for the occasion. A chic dress or a nice suit fits the atmosphere of our wedding perfectly!",
+          a: "There is no strict dress code. However, we’d love it if you dress a little extra festive for the day. A chic dress or a nice suit would fit perfectly with the atmosphere of our wedding.",
         },
       ],
     },
@@ -87,6 +88,7 @@ export const translations = {
       date: "6 Juni 2026",
       time: "17:00",
       location: "Trouwlocatie",
+      open: "Open Uitnodiging",
     },
     countdown: {
       days: "Dagen",
@@ -97,14 +99,14 @@ export const translations = {
     couple: {
       title: "Het Bruidspaar",
       bride: {
-        name: "Sahar Zengin",
+        name: "Sahar Ahmadi",
         role: "De Bruid",
-        bio: "Zij zorgt voor de glinstering en de organisatorische vaardigheden. Kan niet wachten om de hele nacht te dansen!",
+        bio: "Zij is het hart van alles. Liefdevol, zorgzaam en altijd met oog voor de mensen om haar heen. Met haar warme lach en diepe gevoel voor familie brengt ze rust én gezelligheid. Zij is de zon die alles tot leven wekt — bloemen, momenten en vooral de mensen die haar dierbaar zijn.",
       },
       groom: {
         name: "Ferhat Zengin",
         role: "De Bruidegom",
-        bio: "Hij is er klaar voor om in pak te gaan en de beste dag ooit te vieren met de liefde van zijn leven.",
+        bio: "Hij is de rust en de kracht. Betrouwbaar, beschermend en altijd klaar voor de mensen die hij liefheeft. Met zijn nuchtere blik en grote hart weet hij precies wanneer hij moet luisteren en wanneer hij moet lachen. Een man die staat voor zijn liefde — vandaag, morgen en elke dag.",
       },
     },
     video: {
@@ -122,12 +124,12 @@ export const translations = {
     },
     location: {
       title: "Locatie",
-      venue: "Grand Ballroom",
+      venue: " The Crown",
       venueSubtitle: "De Locatie",
       description:
-        "Kom met ons mee naar de historische Grand Ballroom voor een avond vol elegantie en feest. Gelegen in het hart van Amsterdam, biedt deze locatie adembenemende kroonluchters en een tijdloze sfeer.",
+        "The Crown in Rotterdam is een prachtige trouwzaal met een stijlvolle en warme sfeer. De lichte en ruime zaal straalt elegantie en rust uit, en vormt de perfecte omgeving om onze allerbelangrijkste dag te vieren. Dankzij de oprechte warmte en centrale ligging is het de ideale plek om samen met onze dierbaren onvergetelijke momenten te beleven en blijvende herinneringen te maken.",
       addressLabel: "Adres",
-      address: "123 Wedding Lane, Love City",
+      address: "Schuttevaerweg 57, 3044 BA Rotterdam",
       parkingLabel: "Parkeren",
       parkingInfo: "Gratis parkeren beschikbaar op locatie.",
       mapButton: "Bekijk op kaart",
@@ -169,6 +171,7 @@ export const translations = {
       date: "6 Haziran 2026",
       time: "17:00",
       location: "Düğün Mekanı",
+      open: "Davetiyeyi Aç",
     },
     countdown: {
       days: "Gün",
@@ -179,14 +182,14 @@ export const translations = {
     couple: {
       title: "Mutlu Çift",
       bride: {
-        name: "Sahar Zengin",
+        name: "Sahar Ahmadi",
         role: "Gelin",
-        bio: "Işıltıyı ve organizasyon becerilerini o getiriyor. Gece boyu dans etmek için sabırsızlanıyor!",
+        bio: "O, her şeyin kalbidir. Sevgi dolu, şefkatli ve her zaman etrafındaki insanları düşünen biridir. Sıcak gülümsemesi ve ailesine olan derin bağlılığıyla huzur ve samimiyet getirir. O, her şeye hayat veren güneştir — çiçeklere, anlara ve en çok da sevdiklerine.",
       },
       groom: {
         name: "Ferhat Zengin",
         role: "Damat",
-        bio: "Hayatının aşkıyla hayatının en güzel gününü kutlamak için şık giyinmeye hazır.",
+        bio: "O, huzurun ve gücün ta kendisidir. Güvenilir, koruyucu ve sevdiği insanlar için her zaman hazırdır. Sakin duruşu ve kocaman kalbiyle ne zaman dinlemesi, ne zaman gülmesi gerektiğini çok iyi bilir. Aşkının arkasında duran bir adam — bugün, yarın ve her gün.",
       },
     },
     video: {
@@ -204,12 +207,12 @@ export const translations = {
     },
     location: {
       title: "Konum",
-      venue: "Grand Ballroom",
+      venue: " The Crown",
       venueSubtitle: "Mekan",
       description:
-        "Zarafet ve kutlama dolu bir gece için tarihi Grand Ballroom'da bize katılın. Amsterdam'ın kalbinde yer alan bu mekan, nefes kesen avizeleri ve zamansız atmosferiyle dikkat çekiyor.",
+        "The Crown, Rotterdam’da şıklık ve samimiyetle dolu muhteşem bir düğün salonu. Aydınlık ve geniş salonu zarafet ve huzur yayıyor, en özel günümüzü kutlamak için kusursuz bir ortam sunuyor. İçten atmosferi ve merkezi konumuyla, sevdiklerimizle unutulmaz anılar paylaşmak ve kalıcı hatıralar yaratmak için ideal bir yer.",
       addressLabel: "Adres",
-      address: "123 Wedding Lane, Love City",
+      address: "Schuttevaerweg 57, 3044 BA Rotterdam",
       parkingLabel: "Otopark",
       parkingInfo: "Mekanda ücretsiz otopark mevcuttur.",
       mapButton: "Haritada Görüntüle",
@@ -219,15 +222,15 @@ export const translations = {
       items: [
         {
           q: "Çocuklar gelebilir mi?",
-          a: "Yeğenlerinizi çok seviyoruz! Ancak mümkünse çocukların o gün evde kalmasını rica ediyoruz - atıştırmalıklar, güzel bir film ve belki de bol bol sarılan bir bakıcı eşliğinde.",
+          a: "Tüm yeğenlerimiz bizim için çok değerli ve onları çok seviyoruz. Ancak mümkünse, bu özel günde çocukların evde kalmasını rica ediyoruz. Atıştırmalıklar, güzel bir film ve bolca sarılma dağıtan bir bakıcıyla keyifli bir gün geçirebilirler.",
         },
         {
           q: "Yeterli otopark var mı?",
-          a: "Kesinlikle! Yeterli sayıda park yeri mevcuttur.",
+          a: "Evet, yeterli otopark imkânı mevcuttur.",
         },
         {
           q: "Kıyafet kuralı var mı?",
-          a: "Katı bir kıyafet kuralı yok. Ancak bu özel gün için şık giyinmenizi çok isteriz. Şık bir elbise veya güzel bir takım elbise düğün atmosferimize mükemmel uyum sağlayacaktır!",
+          a: "Belirlenmiş bir kıyafet zorunluluğu yoktur. Yine de bu özel günde biraz daha şık ve özenli giyinmenizi isteriz. Şık bir elbise veya güzel bir takım elbise, düğünümüzün atmosferine çok yakışacaktır.",
         },
       ],
     },
@@ -251,6 +254,7 @@ export const translations = {
       date: "۶ ژوئن ۲۰۲۶",
       time: "۱۷:۰۰",
       location: "محل برگزاری",
+      open: "باز کردن دعوت‌نامه",
     },
     countdown: {
       days: "روز",
@@ -261,14 +265,14 @@ export const translations = {
     couple: {
       title: "زوج خوشبخت",
       bride: {
-        name: "سحر زنگین",
+        name: "سحر احمدی",
         role: "عروس",
-        bio: "او درخشش و مهارت‌های سازماندهی را به ارمغان می‌آورد. نمی‌تواند برای رقصیدن در تمام شب منتظر بماند!",
+        bio: "او قلبِ همه‌چیز است. مهربان، دلسوز و همیشه با نگاهی پر از توجه به اطرافیانش. با لبخند گرم و احساس عمیقش نسبت به خانواده، آرامش و صمیمیت می‌آورد. او خورشیدی است که به همه‌چیز جان می‌بخشد — به گل‌ها، لحظه‌ها و بیش از همه به عزیزانش.",
       },
       groom: {
         name: "فرهت زنگین",
         role: "داماد",
-        bio: "او آماده است تا کت و شلوار بپوشد و بهترین روز زندگی‌اش را با عشق زندگی‌اش جشن بگیرد.",
+        bio: "او آرامش و قدرت است. قابل اعتماد، حامی و همیشه حاضر برای کسانی که دوستشان دارد. با نگاه متعادل و قلب بزرگش، دقیقاً می‌داند چه زمانی گوش دهد و چه زمانی بخندد. مردی که پای عشقش می‌ایستد — امروز، فردا و هر روز.",
       },
     },
     video: {
@@ -286,12 +290,12 @@ export const translations = {
     },
     location: {
       title: "مکان",
-      venue: "Grand Ballroom",
+      venue: " The Crown",
       venueSubtitle: "محل برگزاری",
       description:
-        "برای شبی پر از شکوه و جشن در سالن تاریخی Grand Ballroom به ما بپیوندید. این مکان که در قلب آمستردام قرار دارد، دارای لوسترهای نفس‌گیر و فضایی همیشگی است.",
+        "The Crown در روتردام، سالن عروسی زیبایی است که با گرمایی شیک و دلنشین پر شده است. سالن روشن و جادار آن با ظرافت و آرامش می‌درخشد و فضایی بی‌نظیر برای جشن گرفتن خاص‌ترین روز ما ایجاد می‌کند. با فضای صمیمانه و موقعیت مرکزی، بهترین مکان برای به اشتراک گذاشتن لحظات فراموش‌نشدنی و ساختن خاطراتی ماندگار در کنار عزیزانمان است.",
       addressLabel: "آدرس",
-      address: "123 Wedding Lane, Love City",
+      address: "Schuttevaerweg 57, 3044 BA Rotterdam",
       parkingLabel: "پارکینگ",
       parkingInfo: "پارکینگ رایگان در محل موجود است.",
       mapButton: "مشاهده روی نقشه",
@@ -301,15 +305,15 @@ export const translations = {
       items: [
         {
           q: "آیا کودکان دعوت هستند؟",
-          a: "ما خواهرزاده‌ها و برادرزاده‌های شما را خیلی دوست داریم! اما اگر ممکن است، خوشحال می‌شویم که کودکان آن روز را در خانه بمانند - با تنقلات، یک فیلم خوب و شاید پرستاری که بغل‌های اضافه می‌دهد.",
+          a: "تمام خواهرزاده‌ها و برادرزاده‌های ما بسیار دوست‌داشتنی هستند و ما آن‌ها را خیلی دوست داریم. با این حال، اگر امکانش هست، خوشحال می‌شویم که در این روز کودکان در خانه بمانند؛ با یک خوراکی خوشمزه، یک فیلم جذاب و شاید یک پرستار که حسابی به آن‌ها محبت کند.",
         },
         {
           q: "آیا پارکینگ کافی وجود دارد؟",
-          a: "بله! فضای پارکینگ کافی موجود است.",
+          a: "بله، فضای پارک کافی در دسترس است.",
         },
         {
           q: "آیا کد لباس وجود دارد؟",
-          a: "کد لباس سخت‌گیرانه‌ای وجود ندارد. اما خوشحال می‌شویم اگر برای این مناسبت لباس شیک بپوشید. یک لباس مجلسی شیک یا یک کت و شلوار زیبا با حال و هوای عروسی ما کاملاً جور است!",
+          a: "کد لباس مشخص و اجباری وجود ندارد. با این حال، خوشحال می‌شویم اگر در این روز لباس‌های شیک‌تر و جشن‌گونه بپوشید. یک لباس مجلسی زیبا یا یک کت‌وشلوار شیک کاملاً با فضای عروسی ما هماهنگ است",
         },
       ],
     },

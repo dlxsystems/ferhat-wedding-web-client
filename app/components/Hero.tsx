@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Background Layer with Parallax */}
       <motion.div style={{ y }} className="absolute inset-0 -z-20">
         <Image
-          src="/home-img.png"
+          src="/home-img.jpg"
           alt="Sahar & Ferhat"
           fill
           className="object-cover"
@@ -41,7 +41,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 mix-blend-overlay opacity-30 pointer-events-none -z-10"
         style={{
-          backgroundImage: 'url("/gold-foil.png")',
+          backgroundImage: 'url("/gold-foil.jpg")',
           backgroundSize: "200px",
         }}
       ></div>

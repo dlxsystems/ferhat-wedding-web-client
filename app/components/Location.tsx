@@ -12,7 +12,7 @@ export default function Location() {
   return (
     <section className="py-32 px-4 md:px-8 bg-secondary/30 flex flex-col items-center relative overflow-hidden">
       {/* Background Texture */}
-      <div className="absolute inset-0 bg-[url('/texture.png')] opacity-20 mix-blend-multiply" />
+      <div className="absolute inset-0 bg-[url('/texture.jpg')] opacity-20 mix-blend-multiply" />
 
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Text Content */}
@@ -30,8 +30,8 @@ export default function Location() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center justify-center md:justify-start gap-4">
+          <div className="flex flex-col gap-6 px-4">
+            <div className="flex items-center justify-start gap-4">
               <div className="w-10 h-10 rounded-full bg-white border border-primary/20 flex items-center justify-center shrink-0">
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
@@ -44,7 +44,7 @@ export default function Location() {
                 </p>
               </div>
             </div>
-            <div className="flex items-start justify-center md:justify-start gap-4">
+            <div className="flex items-start justify-start gap-4">
               <div className="w-10 h-10 rounded-full bg-white border border-primary/20 flex items-center justify-center shrink-0">
                 <Info className="w-5 h-5 text-primary" />
               </div>
@@ -62,7 +62,7 @@ export default function Location() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://maps.google.com?q=Amsterdam"
+            href="https://maps.app.goo.gl/xTCnKUYN6FijsWXr6?g_st=ic"
             target="_blank"
             rel="noopener noreferrer"
             className="self-center md:self-start mt-4 bg-primary text-white px-8 py-3 font-sans text-sm uppercase tracking-widest hover:bg-foreground transition-colors shadow-lg"
@@ -81,7 +81,7 @@ export default function Location() {
         >
           <div className="relative aspect-4/3 w-full overflow-hidden shadow-2xl border-4 border-white">
             <Image
-              src="/venue.png"
+              src="/venue.jpg"
               alt={t.location.venue}
               fill
               className="object-cover"
@@ -90,11 +90,12 @@ export default function Location() {
 
           <div className="w-full h-[250px] overflow-hidden shadow-lg border border-gray-200">
             <iframe
-              src="https://maps.google.com/maps?q=Amsterdam&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.6801252120817!2d4.4250278!3d51.921546899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c43520a1371ce1%3A0x9c8da3aba56bc71b!2sThe%20Crown!5e0!3m2!1sen!2slk!4v1770031303613!5m2!1sen!2slk"
               className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700"
               allowFullScreen
               loading="lazy"
-            />
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </motion.div>
       </div>

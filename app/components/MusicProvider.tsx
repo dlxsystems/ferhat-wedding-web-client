@@ -22,7 +22,7 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.75;
+      audioRef.current.volume = 0.8;
       audioRef.current.loop = true;
       audioRef.current.load();
     }
@@ -45,22 +45,19 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
 
   const startPlaying = () => {
     if (!audioRef.current) return;
+    if (isPlaying) return; // Already playing
+
     console.log("MusicProvider: Attempting to start playback");
 
-    // Using a micro-delay can sometimes help Safari coordinate multiple media elements
-    setTimeout(() => {
-      if (audioRef.current) {
-        audioRef.current
-          .play()
-          .then(() => {
-            console.log("MusicProvider: Playback started successfully");
-            setIsPlaying(true);
-          })
-          .catch((err) => {
-            console.error("MusicProvider: Playback failed:", err);
-          });
-      }
-    }, 100);
+    audioRef.current
+      .play()
+      .then(() => {
+        console.log("MusicProvider: Playback started successfully");
+        setIsPlaying(true);
+      })
+      .catch((err) => {
+        console.error("MusicProvider: Playback failed:", err);
+      });
   };
 
   return (

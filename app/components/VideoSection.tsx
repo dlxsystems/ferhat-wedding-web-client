@@ -15,11 +15,11 @@ export default function VideoSection() {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover scale-105"
-          src="/journey.mp4"
+          className="w-full h-full object-cover scale-100"
+          src="/journey.mov"
         />
         {/* Cinematic Gradient Overlay */}
-        <div className="absolute inset-0 bg-linear-to-b from-background via-black/20 to-background" />
+        <div className="absolute inset-0 bg-linear-to-b from-background via-transparent to-background" />
       </div>
 
       {/* Content Overlay */}

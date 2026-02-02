@@ -13,7 +13,7 @@ export default function Program() {
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-40 pointer-events-none"
         style={{
-          backgroundImage: 'url("/blush-wash.png")',
+          backgroundImage: 'url("/blush-wash.jpg")',
           backgroundSize: "cover",
         }}
       ></div>

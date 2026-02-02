@@ -9,9 +9,9 @@ export default function Gallery() {
   const { t } = useLanguage();
 
   const images = [
-    { src: "/home-img.png", alt: "Our Moments 1", large: true },
-    { src: "/home-img.png", alt: "Our Moments 2", large: false },
-    { src: "/home-img.png", alt: "Our Moments 3", large: false },
+    { src: "/g3.jpg", alt: "Our Moments 1", large: true },
+    { src: "/g2.jpg", alt: "Our Moments 2", large: false },
+    { src: "/g1.jpg", alt: "Our Moments 3", large: false },
   ];
 
   return (
