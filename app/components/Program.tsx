@@ -2,13 +2,12 @@
 
 import { useLanguage } from "./LanguageProvider";
 import { motion } from "framer-motion";
-import SectionHeading from "./SectionHeading";
 
 export default function Program() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 px-4 bg-background flex flex-col items-center relative overflow-hidden">
+    <section className="py-24 px-4 bg-background flex flex-col items-center justify-center relative overflow-hidden min-h-[50vh]">
       {/* Watercolor Wash Background */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-40 pointer-events-none"
@@ -18,46 +17,44 @@ export default function Program() {
         }}
       ></div>
 
-      <SectionHeading title={t.program.title} />
+      <div className="relative z-10 text-center flex flex-col items-center gap-8 max-w-4xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          {/* Decorative Top Element */}
+          <div className="mb-6 flex items-center justify-center gap-4 opacity-60">
+            <div className="w-12 h-px bg-primary" />
+            <div className="w-2 h-2 rotate-45 border border-primary" />
+            <div className="w-12 h-px bg-primary" />
+          </div>
 
-      <div className="relative flex flex-col gap-16 md:gap-24 max-w-5xl w-full z-10 mt-12">
-        {/* Vertical Line - Centered on all screens */}
-        <div className="absolute left-1/2 top-4 bottom-4 w-px bg-primary/30 -translate-x-1/2" />
+          <h2 className="font-script text-6xl md:text-7xl text-primary mb-4">
+            {t.program.title}
+          </h2>
+          
+          <p className="font-sans text-sm tracking-[0.4em] uppercase text-foreground/60 mb-12">
+            {t.hero.date}
+          </p>
 
-        {t.program.items.map((item, index) => (
-          <motion.div
-            key={index}
-            className={`flex flex-col md:flex-row items-center gap-4 md:gap-16 relative ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1, duration: 0.8 }}
-          >
-            {/* Dot on line - Centered on all screens */}
-            <div className="absolute left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 top-1/2 -translate-y-1/2 md:top-auto border-4 border-white shadow-md z-20" />
+          <div className="flex flex-col items-center">
+             <span className="font-serif text-2xl text-foreground/70 italic">
+               {t.program.timeLabel}
+             </span>
+             <span className="font-serif text-7xl md:text-9xl text-primary font-bold tracking-loose">
+               {t.hero.time}
+             </span>
+          </div>
 
-            {/* Time Side */}
-            <div
-              className={`flex-1 w-full text-center ${index % 2 === 0 ? "md:text-left" : "md:text-right"}`}
-            >
-              <span className="font-serif text-3xl md:text-4xl text-primary font-bold block mb-1">
-                {item.time}
-              </span>
-            </div>
-
-            {/* Small vertical gap for mobile line feel */}
-            <div className="md:hidden h-12 w-px" />
-
-            {/* Event Side */}
-            <div
-              className={`flex-1 w-full text-center ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}
-            >
-              <span className="font-sans text-lg md:text-xl text-foreground font-light tracking-widest uppercase">
-                {item.event}
-              </span>
-            </div>
-          </motion.div>
-        ))}
+          {/* Decorative Bottom Element */}
+          <div className="mt-12 flex items-center justify-center gap-4 opacity-60">
+            <div className="w-12 h-px bg-primary" />
+            <div className="w-2 h-2 rotate-45 border border-primary" />
+            <div className="w-12 h-px bg-primary" />
+          </div>
+        </motion.div>
       </div>
     </section>
   );

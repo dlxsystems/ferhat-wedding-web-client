@@ -79,7 +79,7 @@ export default function Location() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col gap-6"
         >
-          <div className="relative aspect-4/3 w-full overflow-hidden shadow-2xl border-4 border-white">
+          <div className="relative aspect-4/3 w-full rounded-md overflow-hidden shadow-2xl border-4 border-white">
             <Image
               src="/venue.jpg"
               alt={t.location.venue}
@@ -88,7 +88,7 @@ export default function Location() {
             />
           </div>
 
-          <div className="w-full h-[250px] overflow-hidden shadow-lg border border-gray-200">
+          <div className="w-full h-[250px] rounded-sm overflow-hidden shadow-lg border border-gray-200">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.6801252120817!2d4.4250278!3d51.921546899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c43520a1371ce1%3A0x9c8da3aba56bc71b!2sThe%20Crown!5e0!3m2!1sen!2slk!4v1770031303613!5m2!1sen!2slk"
               className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700"

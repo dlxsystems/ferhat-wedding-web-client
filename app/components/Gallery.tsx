@@ -9,9 +9,13 @@ export default function Gallery() {
   const { t } = useLanguage();
 
   const images = [
-    { src: "/g3.jpg", alt: "Our Moments 1", large: true },
-    { src: "/g2.jpg", alt: "Our Moments 2", large: false },
-    { src: "/g1.jpg", alt: "Our Moments 3", large: false },
+    { src: "/g1.jpg", alt: "Our Moments 1", aspect: "aspect-[3/4]" },
+    { src: "/g2.jpg", alt: "Our Moments 2", aspect: "aspect-[4/3]" },
+    { src: "/g3.jpg", alt: "Our Moments 3", aspect: "aspect-[3/4]" },
+    { src: "/g4.jpg", alt: "Our Moments 4", aspect: "aspect-square" },
+    { src: "/g5.jpg", alt: "Our Moments 5", aspect: "aspect-[3/4]" },
+    { src: "/g6.jpg", alt: "Our Moments 6", aspect: "aspect-[4/3]" },
+    { src: "/g7.jpg", alt: "Our Moments 7", aspect: "aspect-square" },
   ];
 
   return (
@@ -22,21 +26,11 @@ export default function Gallery() {
 
       <SectionHeading title={t.gallery.title} />
 
-      <div className="max-w-7xl w-full grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 auto-rows-[200px] md:auto-rows-[300px] mt-12">
+      <div className="max-w-7xl w-full columns-2 md:columns-3 gap-3 space-y-3 mt-12">
         {images.map((image, index) => (
           <motion.div
             key={index}
-            className={`relative overflow-hidden shadow-xl group cursor-pointer ${
-              image.large
-                ? "col-span-2 row-span-2 md:col-span-1 lg:col-span-1"
-                : "col-span-1"
-            } ${
-              image.large && index === 4
-                ? "md:row-span-2"
-                : image.large
-                  ? "md:row-span-2"
-                  : ""
-            }`}
+            className={`break-inside-avoid relative overflow-hidden shadow-sm group cursor-pointer rounded-xs ${image.aspect}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -47,14 +41,14 @@ export default function Gallery() {
             }}
           >
             {/* Image Frame with Golden Glow */}
-            <div className="absolute inset-0 z-10 border border-primary/10 group-hover:border-primary/30 transition-colors pointer-events-none" />
+            <div className="absolute inset-0 z-10 border border-primary/10 group-hover:border-primary/30 transition-colors pointer-events-none rounded-xs" />
 
             <Image
               src={image.src}
               alt={image.alt}
               fill
               className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw"
             />
 
             {/* Glamorous Overlays */}
@@ -62,17 +56,13 @@ export default function Gallery() {
 
             {/* Subtle Golden Shimmer */}
             <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/5 to-primary/5 opacity-100 transition-opacity duration-700" />
-
+            
             {/* Inner Border/Frame Effect */}
-            <div className="absolute inset-3 border border-white/20 group-hover:inset-4 transition-all duration-500 opacity-100" />
-
-            {/* Mobile-specific glamour tag - subtle */}
-            <div className="absolute bottom-3 right-3 md:hidden">
-              <div className="w-1 h-1 bg-primary/40 rounded-full animate-pulse" />
-            </div>
+            <div className="absolute inset-3 border border-white/20 group-hover:inset-4 transition-all duration-500 opacity-100 rounded-sm" />
           </motion.div>
         ))}
       </div>
+
 
       {/* Bottom decorative line */}
       <motion.div

@@ -49,6 +49,7 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
         src="/video.mp4"
         poster="/intro-poster.png"
         preload="auto"
+        
       />
 
       <AnimatePresence>

@@ -6,7 +6,7 @@ import { MusicProvider } from "./components/MusicProvider";
 import Hero from "./components/Hero";
 import Countdown from "./components/Countdown";
 import VideoSection from "./components/VideoSection";
-import Couple from "./components/Couple";
+import QuoteSection from "./components/QuoteSection";
 import Gallery from "./components/Gallery";
 import Program from "./components/Program";
 import Location from "./components/Location";
@@ -42,10 +42,10 @@ export default function Home() {
                 <Hero />
                 <Countdown />
                 <VideoSection />
-                <Couple />
+                <QuoteSection />
                 <Program />
-                <Location />
                 <Gallery />
+                <Location />
                 <QA />
               </motion.div>
             )}

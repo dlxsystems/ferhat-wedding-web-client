@@ -4,7 +4,7 @@ export const translations = {
       intro: "We are getting married!",
       names: "Sahar & Ferhat",
       date: "June 6, 2026",
-      time: "5:00 PM",
+      time: "17:00",
       location: "Wedding Venue",
       open: "Open Invitation",
     },
@@ -32,13 +32,12 @@ export const translations = {
       subtitle: "Watch the film",
     },
     program: {
-      title: "Program of the Day",
-      items: [
-        { time: "17:00", event: "Welcome & Ceremony" },
-        { time: "18:00", event: "Dinner" },
-        { time: "20:00", event: "Party" },
-        { time: "00:00", event: "Send off" },
-      ],
+      title: "The Celebration",
+      timeLabel: "Doors Open",
+    },
+    quote: {
+      text: "Love is not about looking at each other, but looking together in the same direction.",
+      author: "Antoine de Saint-Exupéry",
     },
     location: {
       title: "Location",
@@ -114,13 +113,12 @@ export const translations = {
       subtitle: "Bekijk de film",
     },
     program: {
-      title: "Dagprogramma",
-      items: [
-        { time: "17:00", event: "Welkomst & Ceremonie" },
-        { time: "18:00", event: "Diner" },
-        { time: "20:00", event: "Feest" },
-        { time: "00:00", event: "Afsluiting" },
-      ],
+      title: "De Viering",
+      timeLabel: "Deuren Open",
+    },
+    quote: {
+      text: "Liefde is niet naar elkaar kijken, maar samen in dezelfde richting kijken.",
+      author: "Antoine de Saint-Exupéry",
     },
     location: {
       title: "Locatie",
@@ -197,13 +195,12 @@ export const translations = {
       subtitle: "Filmi izle",
     },
     program: {
-      title: "Program",
-      items: [
-        { time: "17:00", event: "Karşılama & Nikah" },
-        { time: "18:00", event: "Yemek" },
-        { time: "20:00", event: "Parti" },
-        { time: "00:00", event: "Kapanış" },
-      ],
+      title: "Kutlama",
+      timeLabel: "Kapı Açılışı",
+    },
+    quote: {
+      text: "Aşk birbirine bakmak değil, birlikte aynı yöne bakmaktır.",
+      author: "Antoine de Saint-Exupéry",
     },
     location: {
       title: "Konum",
@@ -280,13 +277,12 @@ export const translations = {
       subtitle: "تماشای فیلم",
     },
     program: {
-      title: "برنامه روز",
-      items: [
-        { time: "۱۷:۰۰", event: "خوش‌آمدگویی و مراسم" },
-        { time: "۱۸:۰۰", event: "شام" },
-        { time: "۲۰:۰۰", event: "جشن" },
-        { time: "۰۰:۰۰", event: "پایان مراسم" },
-      ],
+      title: "جشن عروسی",
+      timeLabel: "شروع مراسم",
+    },
+    quote: {
+      text: "عشق خیره شدن به یکدیگر نیست، بلکه با هم به یک سو نگریستن است.",
+      author: "آنتوان دو سنت اگزوپری",
     },
     location: {
       title: "مکان",
