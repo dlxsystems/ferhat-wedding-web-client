@@ -10,9 +10,9 @@ export default function Program() {
     <section className="py-24 px-4 bg-background flex flex-col items-center justify-center relative overflow-hidden min-h-[50vh]">
       {/* Watercolor Wash Background */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-40 pointer-events-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-50 pointer-events-none blur-[0.8px]"
         style={{
-          backgroundImage: 'url("/blush-wash.jpg")',
+          backgroundImage: 'url("/blush-wash.png")',
           backgroundSize: "cover",
         }}
       ></div>

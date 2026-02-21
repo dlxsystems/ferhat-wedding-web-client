@@ -33,11 +33,11 @@ export const translations = {
     },
     program: {
       title: "The Celebration",
-      timeLabel: "Doors Open",
+      timeLabel: "Commencement at",
     },
     quote: {
-      text: "Love is not about looking at each other, but looking together in the same direction.",
-      author: "Antoine de Saint-Exupéry",
+      text: "Together is not our destination, but our beginning. Two hearts. One future.",
+      author: "",
     },
     location: {
       title: "Location",
@@ -56,7 +56,7 @@ export const translations = {
       items: [
         {
           q: "Are children allowed?",
-          a: "All of our nieces and nephews are absolutely adorable, and we love them dearly. That said, if possible, we kindly ask that children stay at home on this day — cozy with a snack, a fun movie, and maybe a babysitter handing out extra cuddles.",
+          a: "All of our nieces and nephews are absolutely adorable, and we love them dearly. That said, if possible, we kindly ask that children stay at home on this day cozy with a snack, a fun movie, and maybe a babysitter handing out extra cuddles.",
         },
         {
           q: "Is there enough parking?",
@@ -114,11 +114,11 @@ export const translations = {
     },
     program: {
       title: "De Viering",
-      timeLabel: "Deuren Open",
+      timeLabel: "Aanvang om",
     },
     quote: {
-      text: "Liefde is niet naar elkaar kijken, maar samen in dezelfde richting kijken.",
-      author: "Antoine de Saint-Exupéry",
+      text: "Samen is voor ons geen bestemming, maar het begin. Twee harten. Eén toekomst.",
+      author: "",
     },
     location: {
       title: "Locatie",
@@ -137,7 +137,7 @@ export const translations = {
       items: [
         {
           q: "Mogen kinderen ook mee?",
-          a: "Al onze neefjes en nichtjes zijn natuurlijk ontzettend lief. Wij houden van hun! Maar als het mogelijk is, vinden we het fijn als de kinderen deze dag lekker thuisblijven - met een snack, een leuke film en misschien een oppas die extra knuffels uitdeelt.",
+          a: "Al onze neefjes en nichtjes zijn natuurlijk ontzettend lief. Wij houden van hun! Maar als het mogelijk is, vinden we het fijn als de kinderen deze dag lekker thuisblijven met een snack, een leuke film en misschien een oppas die extra knuffels uitdeelt.",
         },
         {
           q: "Zijn er genoeg parkeermogelijkheden?",
@@ -196,11 +196,11 @@ export const translations = {
     },
     program: {
       title: "Kutlama",
-      timeLabel: "Kapı Açılışı",
+      timeLabel: "Başlangıç saati",
     },
     quote: {
-      text: "Aşk birbirine bakmak değil, birlikte aynı yöne bakmaktır.",
-      author: "Antoine de Saint-Exupéry",
+      text: "Birliktelik bizim için bir varış noktası değil, bir başlangıçtır. İki kalp. Tek bir gelecek.",
+      author: "",
     },
     location: {
       title: "Konum",
@@ -278,11 +278,11 @@ export const translations = {
     },
     program: {
       title: "جشن عروسی",
-      timeLabel: "شروع مراسم",
+      timeLabel: "شروع مراسم ساعت",
     },
     quote: {
-      text: "عشق خیره شدن به یکدیگر نیست، بلکه با هم به یک سو نگریستن است.",
-      author: "آنتوان دو سنت اگزوپری",
+      text: "با هم بودن برای ما مقصد نیست، بلکه آغاز راه است. دو قلب. یک آینده",
+      author: "",
     },
     location: {
       title: "مکان",

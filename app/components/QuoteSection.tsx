@@ -37,16 +37,6 @@ export default function QuoteSection() {
         >
             “
         </motion.div>
-
-        <motion.cite
-          className="mt-12 block font-sans text-sm tracking-[0.3em] uppercase text-foreground/60 not-italic"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          — {t.quote.author}
-        </motion.cite>
         
         {/* Decorative Divider */}
         <motion.div 
