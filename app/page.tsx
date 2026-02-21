@@ -11,6 +11,7 @@ import Gallery from "./components/Gallery";
 import Program from "./components/Program";
 import Location from "./components/Location";
 import QA from "./components/QA";
+import Attendance from "./components/Attendance";
 import MusicPlayer from "./components/MusicPlayer";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import IntroVideo from "./components/IntroVideo";
@@ -47,6 +48,7 @@ export default function Home() {
                 <Gallery />
                 <Location />
                 <QA />
+                <Attendance />
               </motion.div>
             )}
           </AnimatePresence>

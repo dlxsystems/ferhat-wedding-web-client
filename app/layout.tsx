@@ -25,7 +25,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Sahar & Ferhat - Wedding Invitation",
-  description: "Join us in celebrating our wedding on June 6, 2026",
+  description: "Join us in celebrating the wedding of Sahar & Ferhat on June 6, 2026. View our journey, program, and confirm your attendance.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

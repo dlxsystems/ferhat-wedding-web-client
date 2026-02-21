@@ -7,6 +7,7 @@ export const translations = {
       time: "17:00",
       location: "Wedding Venue",
       open: "Open Invitation",
+      tapHint: "TAP ANYWHERE TO REVEAL • OPEN OUR INVITATION • ",
     },
     countdown: {
       days: "Days",
@@ -79,6 +80,10 @@ export const translations = {
     gallery: {
       title: "Our Moments",
     },
+    attendance: {
+      title: "Confirm Your Attendance",
+      text: "We would really appreciate it if you could let us know before <strong>May 1st</strong> whether you’ll be able to attend, so we can finalize the planning. It means a lot to us.",
+    },
   },
   nl: {
     hero: {
@@ -88,6 +93,7 @@ export const translations = {
       time: "17:00",
       location: "Trouwlocatie",
       open: "Open Uitnodiging",
+      tapHint: "TIK OVERAL OM TE OPENEN • OPEN ONZE UITNODIGING • ",
     },
     countdown: {
       days: "Dagen",
@@ -161,6 +167,10 @@ export const translations = {
     gallery: {
       title: "Onze Momenten",
     },
+    attendance: {
+      title: "Aanwezigheid doorgeven",
+      text: "We horen graag vóór <strong>1 mei</strong> of je aanwezig kunt zijn, zodat we de planning definitief kunnen maken. Het betekent veel voor ons.",
+    },
   },
   tr: {
     hero: {
@@ -170,6 +180,7 @@ export const translations = {
       time: "17:00",
       location: "Düğün Mekanı",
       open: "Davetiyeyi Aç",
+      tapHint: "AÇMAK İÇİN HERHANGİ BİR YERE DOKUNUN • DAVETİYEMİZİ AÇIN • ",
     },
     countdown: {
       days: "Gün",
@@ -243,6 +254,10 @@ export const translations = {
     gallery: {
       title: "Anılarımız",
     },
+    attendance: {
+      title: "Katılım Durumunu Bildirme",
+      text: "Planlamayı netleştirebilmemiz için, <strong>1 Mayıs’tan</strong> önce katılıp katılamayacağınızı bize bildirirseniz çok seviniriz. Bizim için gerçekten çok değerli.",
+    },
   },
   fa: {
     hero: {
@@ -252,6 +267,7 @@ export const translations = {
       time: "۱۷:۰۰",
       location: "محل برگزاری",
       open: "باز کردن دعوت‌نامه",
+      tapHint: "برای مشاهده هرجا را لمس کنید • دعوت‌نامه ما را باز کنید • ",
     },
     countdown: {
       days: "روز",
@@ -323,6 +339,10 @@ export const translations = {
     },
     gallery: {
       title: "لحظات ما",
+    },
+    attendance: {
+      title: "تأیید حضور",
+      text: "خیلی خوشحال میشویم اگر تا قبل از <strong>اول ماه می</strong> به ما اطلاع دهید که آیا میتوانید حضور داشته باشید یا نه، تا بتوانیم برنامهریزی را نهایی کنیم. برای ما بسیار ارزشمند است.",
     },
   },
 };

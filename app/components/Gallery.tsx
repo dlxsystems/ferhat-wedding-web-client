@@ -26,18 +26,18 @@ export default function Gallery() {
 
       <SectionHeading title={t.gallery.title} />
 
-      <div className="max-w-7xl w-full columns-2 md:columns-3 gap-3 space-y-3 mt-12">
+      <div className="max-w-7xl w-full columns-2 md:columns-3 gap-3 mt-12">
         {images.map((image, index) => (
           <motion.div
             key={index}
-            className={`break-inside-avoid relative overflow-hidden shadow-sm group cursor-pointer rounded-xs ${image.aspect}`}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            className={`break-inside-avoid relative mb-3 overflow-hidden shadow-sm group cursor-pointer rounded-xs ${image.aspect} block w-full bg-primary/5`}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{
-              duration: 0.8,
-              delay: index * 0.1,
-              ease: [0.21, 0.47, 0.32, 0.98],
+              duration: 0.6,
+              delay: index * 0.05,
+              ease: "easeOut",
             }}
           >
             {/* Image Frame with Golden Glow */}
@@ -49,6 +49,7 @@ export default function Gallery() {
               fill
               className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw"
+              priority={index < 3}
             />
 
             {/* Glamorous Overlays */}

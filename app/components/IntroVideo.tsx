@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMusic } from "./MusicProvider";
 import { useLanguage } from "./LanguageProvider";
@@ -14,6 +14,31 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const { startPlaying } = useMusic();
   const { t } = useLanguage();
+
+  // Handle automatic reveal on scroll attempt
+  useEffect(() => {
+    const triggerStart = () => {
+      if (!hasStarted) {
+        handleStart();
+      }
+    };
+
+    const handleWheel = (e: WheelEvent) => {
+      if (Math.abs(e.deltaY) > 5) triggerStart();
+    };
+
+    const handleTouchMove = () => {
+      triggerStart();
+    };
+
+    window.addEventListener("wheel", handleWheel);
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
+    
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, [hasStarted]);
 
   const handleStart = () => {
     if (hasStarted) return;
@@ -49,15 +74,70 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
         src="/video.mp4"
         poster="/intro-poster.png"
         preload="auto"
-        
       />
 
       <AnimatePresence>
         {!hasStarted && (
-          <div className="absolute inset-0 flex flex-col items-center justify-start pt-20 gap-6">
-            <div className="animate-bounce text-primary drop-shadow-md text-sm md:text-base tracking-[0.6em] uppercase font-serif font-light">
-              {t.hero.open}
-            </div>
+          <div className="absolute inset-0 flex items-end justify-center overflow-hidden bg-black/50 opacity-60">
+            <motion.div 
+              className="relative flex items-center justify-center cursor-pointer translate-y-1/2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
+            >
+              {/* Rotating SVG Text */}
+              <motion.div
+                className="absolute w-[280px] h-[280px] md:w-[320px] md:h-[320px]"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+              >
+                <svg viewBox="0 0 100 100" className="w-full h-full">
+                  <path
+                    id="circlePath"
+                    d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                    fill="transparent"
+                  />
+                  <text className="fill-white/80 text-[8px] uppercase tracking-[0.2em] font-serif text-shadow-lg">
+                    <textPath xlinkHref="#circlePath">
+                      {t.hero.tapHint}
+                    </textPath>
+                  </text>
+                </svg>
+              </motion.div>
+
+              {/* Pulsing Center Icon/Point */}
+              <div className="relative flex items-center justify-start flex-col group pb-20 md:pb-48">
+                 {/* Decorative Rings */}
+                <motion.div
+                  className="absolute w-16 h-16 md:w-20 md:h-20 rounded-full border border-primary/20"
+                  animate={{ scale: [1, 1.4], opacity: [0.3, 0] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
+                />
+                
+                <motion.div
+                  className="relative z-10 w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/10 backdrop-blur-md border border-primary/40 flex items-center justify-center shadow-[0_0_30px_rgba(176,141,85,0.2)]"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <motion.div
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                  >
+                    <svg 
+                      width="24" 
+                      height="24" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="1.5"
+                      className="text-primary"
+                    >
+                      <path d="M12 19V5M12 5L5 12M12 5L19 12" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </motion.div>
+                </motion.div>
+              </div>
+            </motion.div>
           </div>
         )}
       </AnimatePresence>
