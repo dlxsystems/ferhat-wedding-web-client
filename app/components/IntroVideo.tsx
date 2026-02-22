@@ -85,28 +85,8 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
             >
-              {/* Rotating SVG Text */}
-              <motion.div
-                className="absolute w-[280px] h-[280px] md:w-[320px] md:h-[320px]"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-              >
-                <svg viewBox="0 0 100 100" className="w-full h-full">
-                  <path
-                    id="circlePath"
-                    d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
-                    fill="transparent"
-                  />
-                  <text className="fill-white/80 text-[8px] uppercase tracking-[0.2em] font-serif text-shadow-lg">
-                    <textPath xlinkHref="#circlePath">
-                      {t.hero.tapHint}
-                    </textPath>
-                  </text>
-                </svg>
-              </motion.div>
-
               {/* Pulsing Center Icon/Point */}
-              <div className="relative flex items-center justify-start flex-col group pb-20 md:pb-48">
+              <div className="relative flex items-center justify-start flex-col group pb-30 md:pb-48">
                  {/* Decorative Rings */}
                 <motion.div
                   className="absolute w-16 h-16 md:w-20 md:h-20 rounded-full border border-primary/20"
@@ -120,7 +100,7 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
                   whileTap={{ scale: 0.95 }}
                 >
                   <motion.div
-                    animate={{ y: [0, -8, 0] }}
+                    animate={{ y: [0, -4, 0] }}
                     transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
                   >
                     <svg 

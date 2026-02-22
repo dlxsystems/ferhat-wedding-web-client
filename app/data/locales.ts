@@ -7,7 +7,6 @@ export const translations = {
       time: "17:00",
       location: "Wedding Venue",
       open: "Open Invitation",
-      tapHint: "TAP ANYWHERE TO REVEAL • OPEN OUR INVITATION • ",
     },
     countdown: {
       days: "Days",
@@ -93,7 +92,6 @@ export const translations = {
       time: "17:00",
       location: "Trouwlocatie",
       open: "Open Uitnodiging",
-      tapHint: "TIK OVERAL OM TE OPENEN • OPEN ONZE UITNODIGING • ",
     },
     countdown: {
       days: "Dagen",
@@ -180,7 +178,6 @@ export const translations = {
       time: "17:00",
       location: "Düğün Mekanı",
       open: "Davetiyeyi Aç",
-      tapHint: "AÇMAK İÇİN HERHANGİ BİR YERE DOKUNUN • DAVETİYEMİZİ AÇIN • ",
     },
     countdown: {
       days: "Gün",
@@ -267,7 +264,6 @@ export const translations = {
       time: "۱۷:۰۰",
       location: "محل برگزاری",
       open: "باز کردن دعوت‌نامه",
-      tapHint: "برای مشاهده هرجا را لمس کنید • دعوت‌نامه ما را باز کنید • ",
     },
     countdown: {
       days: "روز",
