@@ -25,9 +25,9 @@ export default function Location() {
         >
           <div>
             <SectionHeading title={t.location.title} />
-            <p className="font-sans text-center md:text-left text-gray-600 leading-relaxed text-lg mb-4">
+            {/* <p className="font-sans text-center md:text-left text-gray-600 leading-relaxed text-lg mb-4">
               {t.location.description}
-            </p>
+            </p> */}
           </div>
 
           <div className="flex flex-col gap-6 px-4">

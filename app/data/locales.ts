@@ -55,16 +55,16 @@ export const translations = {
       title: "Q&A",
       items: [
         {
+          q: "Is there a dress code?",
+          a: "There is no specific dress code for this day. We would appreciate it if you could dress festively.",
+        },
+        {
           q: "Are children allowed?",
-          a: "All of our nieces and nephews are absolutely adorable, and we love them dearly. That said, if possible, we kindly ask that children stay at home on this day cozy with a snack, a fun movie, and maybe a babysitter handing out extra cuddles.",
+          a: "We would like to celebrate this day together in a calm and adult atmosphere. Therefore, we kindly ask you to leave your children at home.",
         },
         {
           q: "Is there enough parking?",
           a: "Yes, there is plenty of parking available.",
-        },
-        {
-          q: "Is there a dress code?",
-          a: "There is no strict dress code. However, we’d love it if you dress a little extra festive for the day. A chic dress or a nice suit would fit perfectly with the atmosphere of our wedding.",
         },
       ],
     },
@@ -140,16 +140,16 @@ export const translations = {
       title: "Veelgestelde vragen",
       items: [
         {
+          q: "Is er een dresscode?",
+          a: "Voor deze dag hanteren wij geen vaste dresscode. Wij zouden het fijn vinden als u feestelijk gekleed komt.",
+        },
+        {
           q: "Mogen kinderen ook mee?",
-          a: "Al onze neefjes en nichtjes zijn natuurlijk ontzettend lief. Wij houden van hun! Maar als het mogelijk is, vinden we het fijn als de kinderen deze dag lekker thuisblijven met een snack, een leuke film en misschien een oppas die extra knuffels uitdeelt.",
+          a: "Wij willen deze dag graag in een rustige en volwassen sfeer met elkaar vieren. Daarom vragen wij u vriendelijk, om uw kinderen thuis te laten.",
         },
         {
           q: "Zijn er genoeg parkeermogelijkheden?",
           a: "Zeker! Er zijn voldoende parkeergelegenheden.",
-        },
-        {
-          q: "Is er een dresscode?",
-          a: "Er is geen vaste dresscode. Wel vinden we het leuk als jullie deze dag extra feestelijk willen aankleden. Een chique jurk of een mooi pak past perfect bij de sfeer van onze bruiloft!",
         },
       ],
     },
@@ -226,16 +226,16 @@ export const translations = {
       title: "Sıkça Sorulan Sorular",
       items: [
         {
+          q: "Kıyafet kuralı var mı?",
+          a: "Bu gün için belirli bir kıyafet kuralımız yoktur. Misafirlerimizin bu özel gün için şık giyinmelerini rica ederiz.",
+        },
+        {
           q: "Çocuklar gelebilir mi?",
-          a: "Tüm yeğenlerimiz bizim için çok değerli ve onları çok seviyoruz. Ancak mümkünse, bu özel günde çocukların evde kalmasını rica ediyoruz. Atıştırmalıklar, güzel bir film ve bolca sarılma dağıtan bir bakıcıyla keyifli bir gün geçirebilirler.",
+          a: "Bu günü birlikte sakin ve yetişkinlere uygun bir ortamda kutlamak istiyoruz. Bu nedenle çocuklarınızı evde bırakmanızı rica ederiz.",
         },
         {
           q: "Yeterli otopark var mı?",
           a: "Evet, yeterli otopark imkânı mevcuttur.",
-        },
-        {
-          q: "Kıyafet kuralı var mı?",
-          a: "Belirlenmiş bir kıyafet zorunluluğu yoktur. Yine de bu özel günde biraz daha şık ve özenli giyinmenizi isteriz. Şık bir elbise veya güzel bir takım elbise, düğünümüzün atmosferine çok yakışacaktır.",
         },
       ],
     },
@@ -312,16 +312,16 @@ export const translations = {
       title: "سوالات متداول",
       items: [
         {
+          q: "آیا کد لباس وجود دارد؟",
+          a: "برای این روز قانون مشخصی برای لباس وجود ندارد. خوشحال میشویم اگر با لباس مناسب و شیک تشریف بیاورید.",
+        },
+        {
           q: "آیا کودکان دعوت هستند؟",
-          a: "تمام خواهرزاده‌ها و برادرزاده‌های ما بسیار دوست‌داشتنی هستند و ما آن‌ها را خیلی دوست داریم. با این حال، اگر امکانش هست، خوشحال می‌شویم که در این روز کودکان در خانه بمانند؛ با یک خوراکی خوشمزه، یک فیلم جذاب و شاید یک پرستار که حسابی به آن‌ها محبت کند.",
+          a: "ما میخواهیم این روز را در فضایی آرام و مناسب بزرگسالان با هم جشن بگیریم. به همین دلیل از شما خواهش میکنیم کودکان را در خانه بگذارید.",
         },
         {
           q: "آیا پارکینگ کافی وجود دارد؟",
           a: "بله، فضای پارک کافی در دسترس است.",
-        },
-        {
-          q: "آیا کد لباس وجود دارد؟",
-          a: "کد لباس مشخص و اجباری وجود ندارد. با این حال، خوشحال می‌شویم اگر در این روز لباس‌های شیک‌تر و جشن‌گونه بپوشید. یک لباس مجلسی زیبا یا یک کت‌وشلوار شیک کاملاً با فضای عروسی ما هماهنگ است",
         },
       ],
     },
