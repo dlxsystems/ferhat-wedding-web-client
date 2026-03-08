@@ -32,7 +32,7 @@ export const translations = {
       subtitle: "Watch the film",
     },
     program: {
-      title: "The Celebration",
+      title: "The Wedding",
       timeLabel: "Commencement at",
     },
     quote: {
@@ -81,7 +81,7 @@ export const translations = {
     },
     attendance: {
       title: "Confirm Your Attendance",
-      text: "We would really appreciate it if you could let us know before <strong>May 1st</strong> whether you’ll be able to attend, so we can finalize the planning. It means a lot to us.",
+      text: "We would really appreciate it if you could let us know before <strong>May 1st</strong> whether you’ll be able to attend, so we can finalize the planning.",
     },
   },
   nl: {
@@ -117,7 +117,7 @@ export const translations = {
       subtitle: "Bekijk de film",
     },
     program: {
-      title: "De Viering",
+      title: "De Bruiloft",
       timeLabel: "Aanvang om",
     },
     quote: {
@@ -167,7 +167,7 @@ export const translations = {
     },
     attendance: {
       title: "Aanwezigheid doorgeven",
-      text: "We horen graag vóór <strong>1 mei</strong> of je aanwezig kunt zijn, zodat we de planning definitief kunnen maken. Het betekent veel voor ons.",
+      text: "We horen graag vóór <strong>1 mei</strong> of je aanwezig kunt zijn, zodat we de planning definitief kunnen maken.",
     },
   },
   tr: {
@@ -203,7 +203,7 @@ export const translations = {
       subtitle: "Filmi izle",
     },
     program: {
-      title: "Kutlama",
+      title: "Düğün",
       timeLabel: "Başlangıç saati",
     },
     quote: {
@@ -253,7 +253,7 @@ export const translations = {
     },
     attendance: {
       title: "Katılım Durumunu Bildirme",
-      text: "Planlamayı netleştirebilmemiz için, <strong>1 Mayıs’tan</strong> önce katılıp katılamayacağınızı bize bildirirseniz çok seviniriz. Bizim için gerçekten çok değerli.",
+      text: "Planlamayı netleştirebilmemiz için, <strong>1 Mayıs’tan</strong> önce katılıp katılamayacağınızı bize bildirirseniz çok seviniriz.",
     },
   },
   fa: {
@@ -289,7 +289,7 @@ export const translations = {
       subtitle: "تماشای فیلم",
     },
     program: {
-      title: "جشن عروسی",
+      title: "عروسی",
       timeLabel: "شروع مراسم ساعت",
     },
     quote: {
@@ -338,7 +338,7 @@ export const translations = {
     },
     attendance: {
       title: "تأیید حضور",
-      text: "خیلی خوشحال میشویم اگر تا قبل از <strong>اول ماه می</strong> به ما اطلاع دهید که آیا میتوانید حضور داشته باشید یا نه، تا بتوانیم برنامهریزی را نهایی کنیم. برای ما بسیار ارزشمند است.",
+      text: "خیلی خوشحال میشویم اگر تا قبل از <strong>اول ماه می</strong> به ما اطلاع دهید که آیا میتوانید حضور داشته باشید یا نه، تا بتوانیم برنامهریزی را نهایی کنیم.",
     },
   },
 };
