@@ -10,7 +10,7 @@ export default function LanguageSwitcher() {
     { code: "en", label: "EN" },
     { code: "nl", label: "NL" },
     { code: "tr", label: "TR" },
-    { code: "fa", label: "FA" },
+    // { code: "fa", label: "FA" },
   ];
 
   return (
